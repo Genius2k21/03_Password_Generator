@@ -12,25 +12,26 @@ function shoutItAllOut() {
 justShout();
 shoutItAllOut();
 
-// TODO: Declare variable 'animal' with the value 'Tigers' so it is only available to the 'sayTigers' function
+// 'animal' is declared locally so it is available only to the sayLions function
 function sayLions() {
-  var animal = "Lions"; 
+  var animal = "Lions";
   console.log(animal);
   return;
 }
 
+// TODO: Declare variable 'animal' with the value 'Tigers' so it is only available to the 'sayTigers' function
 function sayTigers() {
-  console.log("and " + animal + " and "); 
+  console.log("and " + animal + " and ");
   return;
 }
 
-// TODO: The variable 'bears' should only declared once and 'sayBears' should return "Bears! OH MY!". 
+// TODO: The variable 'bears' should only declared once and 'sayBears' should return "Bears! OH MY!".
 var bears = "Bears";
 
 function sayBears() {
-    var bears = "Pandas";
-    console.log(bears + "! OH MY!");
-    return;
+  var bears = "Pandas";
+  console.log(bears + "! OH MY!");
+  return;
 }
 
 sayLions();
@@ -38,7 +39,7 @@ sayTigers();
 sayBears();
 
 // TODO: The variable 'sing' should be declared once in the local scope.
-var sing = "Sing"; 
+var sing = "Sing";
 
 function singAlong() {
   console.log(sing + ",");
