@@ -11,6 +11,7 @@ function generatePassword(){
       //updating the password value with the generated random string
       pass +=charactersSet.charAT(Char);
       //comitting to Github
+      //testing
   }
   return pass; 
 }
