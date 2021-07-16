@@ -10,11 +10,12 @@ function generatePassword(){
     var Char = Math.floor(Math.random()*charactersSet.length + 1);
       //updating the password value with the generated random string
       pass +=charactersSet.charAT(Char);
-      //comitting to Github
-      //testing
   }
   return pass; 
 }
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -24,5 +25,16 @@ function writePassword() {
 
 }
 
+//Prompting user for password length
+function writePassword() {
+  var passlength = prompt("Enter the preferred password length");
+  //checking if password is not a number using isNaN
+  if (isNaN(passlength)){
+    alert("The password length must be a number");
+  }
+  else{
+    var passLen = Number(passlength); 
+  }
+}
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
