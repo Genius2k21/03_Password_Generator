@@ -35,6 +35,20 @@ function writePassword() {
   else{
     var passLen = Number(passlength); 
   }
+
+
+  else{
+    //Parsing the password
+   var passLen = Number(passlength);
+    //checking if the password is less than 8 characters
+   if(passLen <8){
+    alert("Password must be larger than 8 characters");
+    }
+    //Checking if password is more than 128 characters
+    else if(passLen >128){
+      alert("Password must be less than 128 characters");
+    }
+  }
 }
 // Add event listener to generate button
 //generateBtn.addEventListener("click", writePassword);
