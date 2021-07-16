@@ -10,7 +10,7 @@ function generatePassword(){
     var Char = Math.floor(Math.random()*charactersSet.length + 1);
       //updating the password value with the generated random string
       pass +=charactersSet.charAT(Char);
-      //comitting to Github
+      //comitting to Github.
   }
   return pass; 
 }
