@@ -33,11 +33,11 @@ function writePassword() {
     alert("The password length must be a number");
   }
   else{
-    var passLen = Number(passlength); 
+    var passLen = Number(passlength);
   }
 
 
-  else{
+  //else{
     //Parsing the password
    var passLen = Number(passlength);
     //checking if the password is less than 8 characters
@@ -74,6 +74,6 @@ else{
   }
   
   
-}
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
+//}
+//Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
