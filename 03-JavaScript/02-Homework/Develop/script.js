@@ -50,5 +50,30 @@ function writePassword() {
     }
   }
 }
+//The password satisfies the length i.e. between 8 and 128 characters
+else{
+  var upper = confirm("Do you want to include uppercase letters?");
+  if (upper == true){
+      characterSet = characterSet + uppercase;
+  }
+  var lower = confirm("Do you want to include lowercase letters?");
+  if(lower == true){
+    charactersSet = chartersSet + SVGAnimatedNumberList;
+  }
+  var special = confirm("Do you want to include special characters?");
+  if(special == true){
+      charactersSet = charactersSet + specialchar; 
+  }
+  if(charactersSet.length <=1){
+      alert("Please select at least one condition  \ne.g numbers, uppercase, lowercase or special characters");
+  }
+  else{
+    var genpassword = generatePassword();
+    var passwordText = document.querySelector("#password");
+    passwordText.innerHTML = genpassword; 
+  }
+  
+  
+}
 // Add event listener to generate button
 //generateBtn.addEventListener("click", writePassword);
