@@ -10,22 +10,13 @@ function generatePassword(){
     var Char = Math.floor(Math.random()*charactersSet.length + 1);
       //updating the password value with the generated random string
       pass +=charactersSet.charAT(Char);
-  }
-  return pass; 
-}
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-// Write password to the #password input
+      //Prompting user for password length
+      // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-}
-
-//Prompting user for password length
 function writePassword() {
   var passlength = prompt("Enter the preferred password length");
   //checking if password is not a number using isNaN
@@ -51,7 +42,7 @@ function writePassword() {
   }
 }
 //The password satisfies the length i.e. between 8 and 128 characters
-else{
+//else{
   var upper = confirm("Do you want to include uppercase letters?");
   if (upper == true){
       characterSet = characterSet + uppercase;
@@ -67,13 +58,21 @@ else{
   if(charactersSet.length <=1){
       alert("Please select at least one condition  \ne.g numbers, uppercase, lowercase or special characters");
   }
-  else{
+}
+  //else{
     var genpassword = generatePassword();
     var passwordText = document.querySelector("#password");
     passwordText.innerHTML = genpassword; 
   }
-  
-  
-//}
+
+  //return pass; 
+
 //Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+
